@@ -69,12 +69,12 @@ body :-ms-input-placeholder {
           transition-timing-function: ease-in-put;
   font-weight: 200;
 }
-form {
+.cform {
   padding: 20px 0;
   position: relative;
   z-index: 2;
 }
-form input {
+.cform input {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -93,15 +93,15 @@ form input {
           transition-duration: 0.25s;
   font-weight: 300;
 }
-form input:hover {
+.cform input:hover {
   background-color: rgba(255, 255, 255, 0.4);
 }
-form input:focus {
+.cform input:focus {
   background-color: white;
   width: 300px;
   color: #53e3a6;
 }
-form button {
+.cform button {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -117,7 +117,7 @@ form button {
   -webkit-transition-duration: 0.25s;
           transition-duration: 0.25s;
 }
-form button:hover {
+.cform button:hover {
   background-color: #f5f7f9;
 }
 .bg-bubbles {

@@ -13,10 +13,10 @@
 	<div class="wrapper">
 		<div class="container">
 			
-			<form class="form" >
+			<div class="cform" >
 				<input name="pw" id="pw" type="password" placeholder="专属密码3">
 				<button type="submit" id="login-button">开启</button>
-			</form>
+			</div>
 		</div>
 		
 		<ul class="bg-bubbles">
@@ -56,6 +56,9 @@ $('#login-button').click(function (event) {
 				location.href=url;
 			}
 		});
+	}else
+	{
+		alert("密码错误！");
 	}
 
 });
