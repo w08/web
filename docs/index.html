@@ -14,7 +14,7 @@
 		<div class="container">
 			
 			<form class="form" >
-				<input name="pw" id="pw" type="password" placeholder="专属密码2">
+				<input name="pw" id="pw" type="password" placeholder="专属密码3">
 				<button type="submit" id="login-button">开启</button>
 			</form>
 		</div>
@@ -39,10 +39,13 @@
 
 <script>
 $('#login-button').click(function (event) {
-	if (hex_md5($('#pw').val())=="0a113ef6b61820daa5611c870ed8d5ee") 
+	if (hex_md5($('#pw').val())=="0a113ef6b61820daa5611c870ed8d5ee") //没服务器省钱请不要破解谢谢^.^
 	{
-		alert('11');
 		var obj=new Date();
+			$.get("data.json", function(data){
+			alert("Data Loaded: " + data);
+			});
+
 		$.getJSON("data.json", "", function(data) {　 //each循环 使用$.each方法遍历返回的数据date
 			alert('1');
 			curday=obj.getDay();
