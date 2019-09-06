@@ -14,7 +14,7 @@
 		<div class="container">
 			
 			<form class="form" >
-				<input name="pw" id="pw" type="password" placeholder="专属密码1">
+				<input name="pw" id="pw" type="password" placeholder="专属密码2">
 				<button type="submit" id="login-button">开启</button>
 			</form>
 		</div>
@@ -35,12 +35,11 @@
 </div>
 
 <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
-<script src="http://www.gongjuji.net/Content/files/jquery.md5.js" type="text/javascript"></script>
+<script src="js/md5.js" type="text/javascript"></script>
 
 <script>
 $('#login-button').click(function (event) {
-	alert('11111');
-	if ($.md5($('#pw').val())=="0a113ef6b61820daa5611c870ed8d5ee") 
+	if (hex_md5($('#pw').val())=="0a113ef6b61820daa5611c870ed8d5ee") 
 	{
 		alert('11');
 		var obj=new Date();
