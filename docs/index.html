@@ -42,12 +42,14 @@ $('#login-button').click(function (event) {
 	event.preventDefault();
 	if ($.md5($('#pw').val())=="0a113ef6b61820daa5611c870ed8d5ee") 
 	{
+		alert('11');
 		var obj=new Date();
 		$.getJSON("data.json", "", function(data) {　 //each循环 使用$.each方法遍历返回的数据date
+			alert('1');
 			curday=obj.getDay();
 			index=curday-1;
 			if (index<data.length)
-			{	
+			{	alert('111');
 				url=data[index];
 				location.href=url;
 			}
