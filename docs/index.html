@@ -17,7 +17,7 @@
 		<div class="container">			
 			<div class="cform" >
 				<input name="pw" id="pw" type="password" placeholder="专属密码">
-				<button type="submit" id="login-button">开启1.0</button>
+				<button type="submit" id="login-button">开启1.1</button>
 			</div>
 		</div>
 		
@@ -46,9 +46,10 @@ $('#login-button').click(function (event) {
 		var obj=new Date();
 		$.getJSON("data.json", "", function(data) {　 //each循环 使用$.each方法遍历返回的数据date
 			curday=obj.getDate();
-			if (curday<data.length)
+			index=curday-1;
+			if (index<data.length)
 			{	
-				url=data[curday];
+				url=data[index];
 				location.href=url;
 			}
 		});
