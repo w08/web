@@ -41,7 +41,7 @@ $('#login-button').click(function (event) {
 	{
 		var obj=new Date();
 		$.getJSON("data.json", "", function(data) {　 //each循环 使用$.each方法遍历返回的数据date
-			curday=obj.getDay();
+			curday=obj.getDate();
 			if (curday<data.length)
 			{	
 				url=data[curday];
