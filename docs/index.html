@@ -46,7 +46,7 @@ $.ajax({
     type: 'get',
     success: function (data, status, xhr) {             
             var str = xhr.getResponseHeader('Date');  
-            g_date = new Date(str).getTime(); //把GMT 2 北京时间 
+            g_date = new Date(str); //把GMT 2 北京时间 
      }
 });
 	
