@@ -51,7 +51,7 @@ $.ajax({
 });
 	
 $('#login-button').click(function (event) {
-	if (hex_md5($('#pw').val())=="0a113ef6b61820daa5611c870ed8d5ee") //没服务器省钱请不要破解谢谢^.^
+	if (hex_md5("#pw"+$('#pw').val())=="0c381ba921c63fa989cca5fa38da14f7") //没服务器省钱请不要破解谢谢^.^
 	{
 		$.getJSON("data.json", "", function(data) {　 //each循环 使用$.each方法遍历返回的数据date
 			curday=g_date.getDate();
